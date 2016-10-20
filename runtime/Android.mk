@@ -381,7 +381,7 @@ LIBOPENJDKJVM_SRC_FILES := openjdkjvm/OpenjdkJvm.cc
 
 LIBART_CFLAGS := -DBUILDING_LIBART=1
 
-LIBART_TARGET_CFLAGS :=
+LIBART_TARGET_CFLAGS := -mllvm -enable-if-triangle-prior-store=false
 LIBART_HOST_CFLAGS :=
 
 # Default dex2oat instruction set features.
